@@ -93,10 +93,10 @@ public class Main extends Application {
                 direction = Dir.down;
             }
 
-            if (key.getCode() == KeyCode.SPACE && paused==false) {
+            if (key.getCode() == KeyCode.SPACE && !paused) {
                 animation.stop();
                 paused=true;
-            } else if (key.getCode() == KeyCode.SPACE && paused==true) {
+            } else if (key.getCode() == KeyCode.SPACE) {
                 animation.start();
                 paused=false;
             }
